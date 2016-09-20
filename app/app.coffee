@@ -2,9 +2,20 @@
 
 # Declare app level module which depends on filters, and services
 App = angular.module('app', [
-  'ngCookies'
-  'ngResource'
 ])
+
+
+
+App.directive 'tae', ->
+  templateUrl: '../components/nav/index.html'
+  retrict: "E"
+  replace: true
+
+App.controller 'rav', ->
+  debugger
+
+
+
 #
 # App.config([
 #   '$routeProvider'

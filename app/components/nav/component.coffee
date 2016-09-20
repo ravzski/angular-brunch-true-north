@@ -1,12 +1,11 @@
 Ctrl = ($scope,$rootScope,$http) ->
-
-  console.log "z"
+  debugger
+  console.log "rrr"
   return
 
 Ctrl.$inject = ['$scope','$rootScope','$http']
 
-angular.module('app').directive 'navBar', ->
-  templateUrl: '/components/nav/index.html'
-  retrict: "E"
+App.directive 'tae', ->
+  template: '<h1>tae</h1>'
+  retrict: "EAC"
   replace: true
-  controller: Ctrl
